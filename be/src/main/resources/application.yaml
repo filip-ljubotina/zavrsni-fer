@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:update}
+  datasource:
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    url: ${SPRING_DATASOURCE_URL}
+    driverClassName: ${SPRING_DATASOURCE_DRIVER_CLASS_NAME:org.postgresql.Driver}
+
+security:
+  jwt:
+    secret-key: ${SECURITY_JWT_SECRET_KEY}
+    expiration-time: ${SECURITY_JWT_EXPIRATION_TIME:360000}
